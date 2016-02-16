@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int a,b;
+
+int superpower(int a, int b){
+  int x=1;
+  int n=0;
+
+  do{
+      x=x*a;
+      n=n+1;
+  } while (n<b);
+  return x;
+}
+int main(){
+
+    cout<<"I'll give you the fist number you gave me raised to the second you gave me"<<endl;
+  cout<< "Give me the first number: ";
+  cin>> a;
+  cout<< "Give me the second number: ";
+  cin>>b;
+  cout<<"The result of " <<a<< " ^ " <<b<< " = " << superpower (a,b) <<endl;
+  return 0;
+}
